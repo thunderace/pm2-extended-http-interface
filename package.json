@@ -1,0 +1,39 @@
+{
+  "name": "pm2-extended-http-interface",
+  "version": "0.1.0",
+  "engines": {
+    "node": ">=0.10"
+  },
+  "directories": {
+    "bin": "./bin",
+    "lib": "./lib",
+    "example": "./examples"
+  },
+  "author": {
+    "name": "Arnaud LAURENT",
+    "email": "thunderace@free.fr"
+  },
+  "maintainers": [
+  ],
+  "homepage": "https://github.com/thunderace/pm2-ext-http-interface",
+  "description": "",
+  "main": "pm2-ext-http-interface.js",
+  "dependencies": {
+    "commander": "2.4.0",
+    "debug": "2.1.0",
+    "json-stringify-safe": "5.0.0",
+    "pm2-axon": "2.0.7",
+    "pm2-axon-rpc": "0.3.6"
+  },
+  "devDependencies": {
+    "request": "^2.48.0"
+  },
+  "bugs": {
+    "url": "https://github.com/thunderace/pm2-ext-http-interface/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/thunderace/pm2-ext-http-interface.git"
+  },
+  "license": "AGPLv3"
+}
