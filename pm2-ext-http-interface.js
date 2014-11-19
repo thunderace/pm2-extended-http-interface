@@ -10,6 +10,7 @@ var Satan = require('./lib/Satan');
 var urlT  = require('url');
 var util = require('util');
 var queryString = require( "querystring" );
+var version = require('./package.json').version;
 
 
 var program = require('commander');
@@ -68,6 +69,15 @@ http.createServer(function (req, res) {
   console.log('Access on PM2 monit point %s', path);
 
   switch(path) {
+  	case '/version':
+      var data = {
+        name: 'pm2-ext-http-interface',
+        version: version
+      };
+      res.statusCode = 200;
+      res.write(JSON.stringify(data));
+      return res.end();
+	  break;
   	case '/stop':
   		if (url.query) {
   		  var data = queryString.parse( url.query );
