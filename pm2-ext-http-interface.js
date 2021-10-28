@@ -66,7 +66,6 @@ http.createServer(function (req, res) {
 
   var url = urlT.parse(req.url);
   var path = urlT.parse(req.url).pathname;
-  console.log('Access on PM2 monit point %s', path);
 
   switch(path) {
   	case '/version':
